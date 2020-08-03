@@ -1,8 +1,8 @@
 # Application Fundamentals React
 Application of the fundamentals in React by Leonardo Moura Leitao's course by.
 
-## Run app:
-$ docker-compose up app-react
+#### Run app:
+  $ docker-compose up app-react
 
-# The application will start at `localhost:3500` \o/
+  # The application will start at `localhost:3500` \o/
 
