@@ -1,0 +1,56 @@
+  
+version: '3.7'
+services:
+  #######################
+  #### WEB-CLIENT
+  #######################
+  app-react:
+    container_name: app-react
+    build:
+      context: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    ports:
+      - 3500:3000
+    expose:
+      - 3500
+
+# version: '3.7'
+# services:
+#   #######################
+#   #### APP
+#   #######################
+#   web:
+#     container_name: web
+#     build:
+#       context: ./
+#     ports:
+#       - 3000:3000
+#     volumes:
+#       - .:/usr/src/app
+#       - /usr/src/app/node_modules
+#       - /usr/src/app/public
+# #     depends_on: 
+# #       - mongo
+
+# #   mongo:
+# #     container_name: mongo
+# #     image: mongo
+# #     restart: unless-stopped
+# #     volumes:
+# #       - mongo-data:/data
+# #     ports:
+# #       - '27017:27017'
+# #     networks:
+# #       - app-connect
+
+# # volumes:
+# #   mongo-data:
+
+# # networks: 
+# #     app-connect:
+# #       driver: bridge
