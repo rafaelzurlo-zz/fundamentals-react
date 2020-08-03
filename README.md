@@ -1,5 +1,5 @@
 # Application Fundamentals React
-Application of the fundamentals in React by Leonardo Moura Leitao's course by.
+Application of the fundamentals in React by Leonardo Moura Leitao's course by Udemy.
 
 #### Run app:
   $ docker-compose up app-react
